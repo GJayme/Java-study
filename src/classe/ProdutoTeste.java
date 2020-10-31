@@ -22,7 +22,7 @@ public class ProdutoTeste {
 
         out.println(produto2.nome + " - " + produto2.preco + " - " + produto2.desconto);
 
-        double precoFinal1 = produto1.getPrecoComDesconto();
+        double precoFinal1 = produto1.getPrecoComDesconto(0.2);
         double precoFinal2 = produto2.getPrecoComDesconto();
         double mediaCarrinho = (precoFinal1 + precoFinal2) / 2;
 
