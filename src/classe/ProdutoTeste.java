@@ -1,22 +1,22 @@
 package classe;
 
+import java.util.Properties;
+
 import static java.lang.System.*;
 
 public class ProdutoTeste {
     public static void main(String[] args) {
 
-        Produto produto1 = new Produto("Playstation 5", 4999, 0.1);
-
-        out.println(produto1.nome + " - " + produto1.preco + " - " + produto1.desconto);
-
-        out.println(produto1);
+        Produto produto1 = new Produto("Playstation 5", 4999);
 
         var produto2 = new Produto();
         produto2.nome = "Iphone 12";
         produto2.preco = 7999;
-        produto2.desconto = 0.1;
 
-        out.println(produto2.nome + " - " + produto2.preco + " - " + produto2.desconto);
+        Produto.desconto = 0.50;
+
+        out.println(produto1.nome + " - " + produto1.getPrecoComDesconto());
+        out.println(produto2.nome + " - " + produto2.getPrecoComDesconto());
 
         double precoFinal1 = produto1.getPrecoComDesconto(0.2);
         double precoFinal2 = produto2.getPrecoComDesconto();

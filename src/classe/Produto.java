@@ -4,15 +4,14 @@ public class Produto {
 
     String nome;
     double preco;
-    double desconto;
+    static double desconto = 0.25;
 
     Produto() {
     }
 
-    Produto(String nomeInicial, double precoInical, double descontoInicial) {
+    Produto(String nomeInicial, double precoInical) {
         nome = nomeInicial;
         preco = precoInical;
-        desconto = descontoInicial;
     }
 
     double getPrecoComDesconto () {
@@ -22,5 +21,4 @@ public class Produto {
     double getPrecoComDesconto (double descontoDoGerente) {
         return preco * (1 - descontoDoGerente);
     }
-
 }
