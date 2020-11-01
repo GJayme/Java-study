@@ -5,7 +5,7 @@ public class DataTeste {
 
         Data d1 = new Data();
 
-        // Instanciando por eferencia!
+        // Instanciando por referencia!
         var d2 = new Data(31, 12, 2020);
 
         System.out.println(d1.obterDataFormatada());
