@@ -5,11 +5,7 @@ import static java.lang.System.*;
 public class ProdutoTeste {
     public static void main(String[] args) {
 
-        Produto produto1 = new Produto();
-
-        produto1.nome = "Playstation 5";
-        produto1.preco = 4999;
-        produto1.desconto = 0.1;
+        Produto produto1 = new Produto("Playstation 5", 4999, 0.1);
 
         out.println(produto1.nome + " - " + produto1.preco + " - " + produto1.desconto);
 
