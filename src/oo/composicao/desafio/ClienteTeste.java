@@ -3,21 +3,19 @@ package oo.composicao.desafio;
 public class ClienteTeste {
 
     public static void main(String[] args) {
-        Produto ps5 = new Produto(4299, "PS5");
-        Item itemPs5 = new Item(1, ps5);
 
-//        Compra compra1 = new Compra(itemPs5);
+        Compra compra1 = new Compra();
+        compra1.adicionarItem("Caneta", 9.67, 100);
+        compra1.adicionarItem(new Produto(1897.88, "Notebook"),2 );
 
-        Compra compra1 = new Compra(new Item(1, new Produto(4299, "PS5")));
-        Compra compra2 = new Compra(new Item(1, new Produto(7999, "Iphone 12")));
+        Compra compra2 = new Compra();
+        compra2.adicionarItem("Caderno", 10, 10);
+        compra2.adicionarItem(new Produto(998.90, "Impressora"),1 );
 
-        Client client1 = new Client("Gabriel", compra1);
+        Client cliente = new Client("Maria Julia");
+        cliente.compras.add(compra1);
+        cliente.compras.add(compra2);
 
-        client1.addCompra(compra2);
-
-
-
-        System.out.println(client1.obterValorTotal());
-
+        System.out.println(cliente.obterValorTotal());
     }
 }

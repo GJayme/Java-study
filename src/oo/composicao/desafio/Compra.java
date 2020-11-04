@@ -6,8 +6,13 @@ public class Compra {
 
     ArrayList<Item> itens = new ArrayList<>();
 
-    public Compra(Item item) {
-        this.itens.add(item);
+    void adicionarItem(Produto p, int quantidade) {
+        this.itens.add(new Item(quantidade, p));
+    }
+
+    void adicionarItem(String nome, double preco, int quantidade) {
+        var produto = new Produto(preco, nome);
+        this.itens.add(new Item(quantidade, produto));
     }
 
     public double obterValorTotal() {

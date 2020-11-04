@@ -7,9 +7,8 @@ public class Client {
     String nomeClient;
     ArrayList<Compra> compras = new ArrayList<>();
 
-    public Client(String nomeClient, Compra compra) {
+    public Client(String nomeClient) {
         this.nomeClient = nomeClient;
-        compras.add(compra);
     }
 
     public void addCompra(Compra compra){
