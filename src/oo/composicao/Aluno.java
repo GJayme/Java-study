@@ -6,7 +6,7 @@ import java.util.List;
 public class Aluno {
 
     final String nome;
-    List<Curso> cursos = new ArrayList<>();
+    final List<Curso> cursos = new ArrayList<>();
 
     Aluno(String nome) {
         this.nome = nome;
