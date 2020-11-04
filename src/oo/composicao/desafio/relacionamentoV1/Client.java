@@ -1,4 +1,4 @@
-package oo.composicao.desafio;
+package oo.composicao.desafio.relacionamentoV1;
 
 import java.util.ArrayList;
 

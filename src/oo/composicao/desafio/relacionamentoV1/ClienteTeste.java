@@ -1,4 +1,4 @@
-package oo.composicao.desafio;
+package oo.composicao.desafio.relacionamentoV1;
 
 public class ClienteTeste {
 
