@@ -15,4 +15,9 @@ public class Carro {
 
         velocidadeAtual -= 5;
     }
+
+    @Override
+    public String toString() {
+        return "Velocidade atual é " + velocidadeAtual + "Km/h.";
+    }
 }

@@ -10,16 +10,16 @@ public class CarroTeste {
         civic.acelerar();
         ferrari.acelerar();
 
-        System.out.println("ferrari.velocidadeAtual = " + ferrari.velocidadeAtual);
-        System.out.println("civic.velocidadeAtual = " + civic.velocidadeAtual);
+        System.out.println("Ferrari: " + ferrari);
+        System.out.println("Civic: "+ civic);
 
         civic.frear();
         civic.frear();
         civic.frear();
         civic.frear();
 
-        System.out.println("ferrari.velocidadeAtual = " + ferrari.velocidadeAtual);
-        System.out.println("civic.velocidadeAtual = " + civic.velocidadeAtual);
+        System.out.println("Ferrari: " + ferrari);
+        System.out.println("Civic: " + civic);
 
 
     }
