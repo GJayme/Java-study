@@ -10,8 +10,15 @@ public class CarroTeste {
         Civic civic = new Civic(280.00);
         Ferrari ferrari = new Ferrari(350.00);
 
+        ferrari.ligarTurbo();
+
         civic.acelerar();
         ferrari.acelerar();
+
+        System.out.println("Ferrari: " + ferrari);
+
+        ferrari.desligarTurbo();
+
 
         System.out.println("Ferrari: " + ferrari);
         System.out.println("Civic: "+ civic);
